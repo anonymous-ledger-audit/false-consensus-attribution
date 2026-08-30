@@ -1,0 +1,172 @@
+{
+  "contract": {
+    "n_endpoints": 100,
+    "model_seeds": [
+      20260840,
+      20260841,
+      20260842,
+      20260843,
+      20260844
+    ],
+    "strict_operating_point": {
+      "kappa_D_over_s_max": 0.02,
+      "tau_H_over_s_min": 0.05
+    },
+    "majority_definition": "event holds in at least 3/5 fits"
+  },
+  "model_summary": {
+    "Additive": {
+      "n_audits": 500,
+      "test_R2_min": 0.6931675534968562,
+      "test_R2_max": 0.7043453436483027,
+      "audit_max_H_over_s": 3.495339301967737e-14,
+      "audit_row_median_D_over_s": 2.3446031109047296e-16,
+      "audit_row_median_H_over_s": 1.4130377777139509e-14,
+      "audit_row_median_chi": null,
+      "endpoint_median_D_over_s": 2.293081761146381e-16,
+      "endpoint_median_H_over_s": 1.3855015055727143e-14,
+      "endpoint_median_chi": null,
+      "material_endpoints_in_majority": 0,
+      "strict_endpoints_in_majority": 0,
+      "max_normalized_certification_residual": 0.9308224883072838
+    },
+    "Quadratic": {
+      "n_audits": 500,
+      "test_R2_min": 0.608904536077354,
+      "test_R2_max": 0.648984966549762,
+      "audit_max_H_over_s": 8.593771941508857e-14,
+      "audit_row_median_D_over_s": 1.0513915429969402e-16,
+      "audit_row_median_H_over_s": 3.267845170027684e-14,
+      "audit_row_median_chi": null,
+      "endpoint_median_D_over_s": 1.0228029488532524e-16,
+      "endpoint_median_H_over_s": 3.2182916692873636e-14,
+      "endpoint_median_chi": null,
+      "material_endpoints_in_majority": 0,
+      "strict_endpoints_in_majority": 0,
+      "max_normalized_certification_residual": 3.299024066211066e-07
+    },
+    "Softplus MLP": {
+      "n_audits": 500,
+      "test_R2_min": 0.7829924813585312,
+      "test_R2_max": 0.7939870027144666,
+      "audit_max_H_over_s": 33.623253680936024,
+      "audit_row_median_D_over_s": 0.18816761052888858,
+      "audit_row_median_H_over_s": 1.4130989786200776,
+      "audit_row_median_chi": 0.8850678560718555,
+      "endpoint_median_D_over_s": 0.19067048433963474,
+      "endpoint_median_H_over_s": 1.5381805297838427,
+      "endpoint_median_chi": 0.8967527876838677,
+      "material_endpoints_in_majority": 98,
+      "strict_endpoints_in_majority": 0,
+      "max_normalized_certification_residual": 0.9903622725696676
+    },
+    "CrossNet": {
+      "n_audits": 500,
+      "test_R2_min": 0.7503596148181647,
+      "test_R2_max": 0.7833092343252891,
+      "audit_max_H_over_s": 9.825387372142147,
+      "audit_row_median_D_over_s": 0.0822631523406814,
+      "audit_row_median_H_over_s": 0.35501171097011974,
+      "audit_row_median_chi": 0.7987709827802884,
+      "endpoint_median_D_over_s": 0.0870700924628266,
+      "endpoint_median_H_over_s": 0.3510876736172175,
+      "endpoint_median_chi": 0.7894023974077388,
+      "material_endpoints_in_majority": 92,
+      "strict_endpoints_in_majority": 2,
+      "max_normalized_certification_residual": 0.9938068269553674
+    }
+  },
+  "cross_architecture": {
+    "median_H_over_s": {
+      "pearson": 0.9339611547046426,
+      "spearman": 0.8918931893189318
+    },
+    "median_D_over_s": {
+      "pearson": 0.1783395080958878,
+      "spearman": 0.5817101710171017
+    },
+    "median_chi": {
+      "pearson": 0.6024300164813832,
+      "spearman": 0.6412481248124811
+    },
+    "top10_shared": 7,
+    "top20_shared": 17,
+    "material_majority_shared": 92
+  },
+  "threshold_surfaces_rows_tau_columns_kappa": {
+    "Softplus MLP": [
+      [
+        0,
+        2,
+        2,
+        5,
+        15
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        13
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        12
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
+    ],
+    "CrossNet": [
+      [
+        1,
+        3,
+        10,
+        20,
+        59
+      ],
+      [
+        0,
+        0,
+        7,
+        17,
+        56
+      ],
+      [
+        0,
+        0,
+        2,
+        12,
+        51
+      ],
+      [
+        0,
+        0,
+        2,
+        9,
+        46
+      ],
+      [
+        0,
+        0,
+        1,
+        3,
+        33
+      ]
+    ]
+  }
+}

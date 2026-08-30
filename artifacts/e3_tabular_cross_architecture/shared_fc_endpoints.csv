@@ -1,0 +1,2 @@
+audit_id,dataset_index,target,mlp_median_D_over_s,mlp_median_H_over_s,mlp_median_chi,mlp_visible_seed_count,mlp_material_seed_count,mlp_fc_seed_count,crossnet_median_D_over_s,crossnet_median_H_over_s,crossnet_median_chi,crossnet_visible_seed_count,crossnet_material_seed_count,crossnet_fc_seed_count,delta_H_mlp_minus_crossnet,delta_D_mlp_minus_crossnet,shared_fc_any
+36,2358,1.487,0.0707894131587489,0.1947841537746187,0.8410951062147275,1,5,1,0.0147858451246562,0.0537843816574312,0.7550196649879004,4,3,2,0.1409997721171875,0.0560035680340927,True

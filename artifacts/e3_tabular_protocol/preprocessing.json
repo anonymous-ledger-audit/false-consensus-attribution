@@ -1,0 +1,61 @@
+{
+  "feature_names": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "n_features": 8,
+  "feature_preprocessing": "StandardScaler fit on training split only",
+  "scaler_mean": {
+    "MedInc": 3.89524821428573,
+    "HouseAge": 28.665005537098562,
+    "AveRooms": 5.4370475853320235,
+    "AveBedrms": 1.0945638672485793,
+    "Population": 1438.968715393134,
+    "AveOccup": 3.1253513488066806,
+    "Latitude": 35.62679332779639,
+    "Longitude": -119.56655038759554
+  },
+  "scaler_scale": {
+    "MedInc": 1.9251131812651023,
+    "HouseAge": 12.606568502470726,
+    "AveRooms": 2.3823551831718075,
+    "AveBedrms": 0.427463245857179,
+    "Population": 1173.9113616859947,
+    "AveOccup": 12.383581750778909,
+    "Latitude": 2.137297912818727,
+    "Longitude": 2.0029409694458216
+  },
+  "train_raw_feature_min": {
+    "MedInc": 0.4999,
+    "HouseAge": 1.0,
+    "AveRooms": 0.8461538461538461,
+    "AveBedrms": 0.3333333333333333,
+    "Population": 3.0,
+    "AveOccup": 0.6923076923076923,
+    "Latitude": 32.55,
+    "Longitude": -124.35
+  },
+  "train_raw_feature_max": {
+    "MedInc": 15.0001,
+    "HouseAge": 52.0,
+    "AveRooms": 141.9090909090909,
+    "AveBedrms": 25.636363636363637,
+    "Population": 35682.0,
+    "AveOccup": 1243.3333333333333,
+    "Latitude": 41.95,
+    "Longitude": -114.47
+  },
+  "train_target_mean": 2.076615357142857,
+  "train_target_std": 1.1547513832178116,
+  "train_target_q05": 0.668,
+  "train_target_q50": 1.811,
+  "train_target_q95": 4.861549999999998,
+  "train_target_q95_minus_q05": 4.1935499999999974,
+  "note_on_future_model_scale": "The primary attribution normalization s is model-specific. For each fitted model, compute s = Q0.95(f(X_train)) - Q0.05(f(X_train)) using training outputs only."
+}

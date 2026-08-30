@@ -1,0 +1,88 @@
+{
+  "all_pass": true,
+  "control_null_tolerance_H_over_s": 1e-07,
+  "experiment": "E3b Fashion-MNIST vision fatal controls",
+  "families": {
+    "additive": {
+      "certification_pass_rate": 1.0,
+      "max_D_over_s": 1.7120727322809893e-14,
+      "max_H_over_s": 6.383503162561716e-14,
+      "max_R_over_s": 6.41877730848109e-14,
+      "max_abs_pot_order_ge2_over_s": 3.659516971077615e-15,
+      "max_abs_pot_order_ge3_over_s": 3.659516971077615e-15,
+      "max_abs_transfer_entry": 6.216693826388564e-13,
+      "max_ig_reconstruction_error": 0.0,
+      "max_nested_quadrature_error": 1.83136437570397e-07,
+      "max_pot_conservation_error": 6.216693826388564e-13,
+      "median_pair_pot_L1_over_s": 1.4800916393220646e-15,
+      "n_audits": 500,
+      "n_fits": 5,
+      "quadrature_order_counts": {
+        "32": 366,
+        "64": 134
+      },
+      "resolved_rate": 1.0,
+      "test_accuracy_max": 0.8834,
+      "test_accuracy_median": 0.8805,
+      "test_accuracy_min": 0.8792
+    },
+    "quadratic": {
+      "certification_pass_rate": 1.0,
+      "max_D_over_s": 4.645649404987657e-16,
+      "max_H_over_s": 5.0086926261955143e-14,
+      "max_R_over_s": 5.0287894251988414e-14,
+      "max_abs_pot_order_ge2_over_s": 0.4823223829121965,
+      "max_abs_pot_order_ge3_over_s": 3.2595861325914346e-15,
+      "max_abs_transfer_entry": 2.225997164373439e-14,
+      "max_ig_reconstruction_error": 5.329070518200751e-15,
+      "max_nested_quadrature_error": 3.108624468950438e-14,
+      "max_pot_conservation_error": 6.908362770730037e-14,
+      "median_pair_pot_L1_over_s": 0.6573230386068607,
+      "n_audits": 500,
+      "n_fits": 5,
+      "quadrature_order_counts": {
+        "32": 500
+      },
+      "resolved_rate": 1.0,
+      "test_accuracy_max": 0.8737,
+      "test_accuracy_median": 0.8697,
+      "test_accuracy_min": 0.867
+    }
+  },
+  "model_seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "n_control_audits": 1000,
+  "n_fits": 10,
+  "pass_flags": {
+    "additive_has_no_material_order_ge2_pots": true,
+    "additive_null": true,
+    "all_audits_certified": true,
+    "all_audits_resolved": true,
+    "all_predictions_finite": true,
+    "quadratic_has_no_material_order_ge3_pots": true,
+    "quadratic_null": true
+  },
+  "prediction_and_audit_dtype": "float64",
+  "protocol_manifest_sha256": "29a53dba5d6c073dad95f20be9a6a964740315b9bda50501902eb364ada13bcf",
+  "quadrature_orders": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "software_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "python": "3.13.13",
+    "torch": "2.12.0+cpu",
+    "torchvision": "0.27.0+cpu"
+  },
+  "structural_pot_tolerance_over_s": 1e-07,
+  "training_dtype": "float32"
+}

@@ -1,0 +1,21 @@
+{
+  "n_unique_endpoints": 100,
+  "n_model_seeds": 5,
+  "strict_fc_definition": {
+    "D_over_s_max": 0.02,
+    "H_over_s_min": 0.05
+  },
+  "row_level_fc_count": 9,
+  "endpoints_with_fc_in_at_least_1_seed": 6,
+  "endpoints_with_fc_in_at_least_2_seeds": 3,
+  "endpoints_with_fc_in_at_least_3_seeds": 0,
+  "endpoints_with_fc_in_all_5_seeds": 0,
+  "fc_recurrence_histogram_seed_count_to_endpoint_count": {
+    "0": 94,
+    "1": 3,
+    "2": 3,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "experiment": "E3a tabular protocol freeze",
+  "dataset": {
+    "name": "California Housing",
+    "source": "sklearn.datasets.fetch_california_housing",
+    "n_rows": 20640,
+    "n_features": 8,
+    "feature_names": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude"
+    ],
+    "X_sha256": "b6d96d136bf81468d79d70b726cd3918e37c23f61139a65a234c707c37a23c4e",
+    "y_sha256": "7707f825f1470908ac1108debb74d8a5d9ab55ffd42c4b0e83cfdf9ace3b7c27"
+  },
+  "split": {
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "split_seed": 20260830,
+    "n_train": 14448,
+    "n_validation": 3096,
+    "n_test": 3096
+  },
+  "baseline": {
+    "rule": "actual training observation closest in Euclidean distance to the train-standardized feature center",
+    "dataset_index": 3077,
+    "train_position": 2149,
+    "target": 0.84,
+    "standardized_distance_to_train_center": 0.4401449870231659
+  },
+  "audit": {
+    "audit_seed": 20260831,
+    "selection_rule": "from the fixed test split, sample exactly 10 endpoints uniformly without replacement from each empirical target decile",
+    "per_target_decile": 10,
+    "n_audit_endpoints": 100,
+    "target_decile_counts": {
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 10,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 10,
+      "9": 10,
+      "10": 10
+    },
+    "same_endpoints_for_all_models_and_model_seeds": true
+  },
+  "future_explanation_contract": {
+    "input_space": "train-standardized feature space; baseline and endpoint correspond to actual/raw observations under the invertible train-fitted scaler",
+    "explained_quantity": "scalar predicted house value",
+    "path": "straight line from frozen baseline to held-out endpoint",
+    "endpoint_game": "all 2^8 = 256 Boolean corners evaluated exhaustively",
+    "primary_baseline": "frozen observed training row defined above",
+    "primary_model_output_scale": "s = Q0.95(f(X_train)) - Q0.05(f(X_train)), computed per fitted model from training outputs only"
+  },
+  "future_model_seeds": [
+    20260840,
+    20260841,
+    20260842,
+    20260843,
+    20260844
+  ],
+  "checks": {
+    "split_disjoint": true,
+    "split_complete": true,
+    "baseline_in_train": true,
+    "baseline_not_in_test": true,
+    "audit_n_exact": true,
+    "audit_unique": true,
+    "audit_test_only": true,
+    "audit_not_train": true,
+    "audit_exactly_10_per_target_decile": true,
+    "train_standardized_mean_max_abs": 6.796577727836843e-13,
+    "train_standardized_std_max_abs_error": 4.263256414560601e-14,
+    "train_standardization_check": true
+  },
+  "all_pass": true
+}

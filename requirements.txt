@@ -1,0 +1,10 @@
+# Core versions observed in the execution environment
+numpy==2.4.4
+torch==2.12.0
+torchvision==0.27.0
+Pillow==12.2.0
+
+# Remaining versions recorded by the frozen protocol and figure metadata
+pandas==3.0.3
+matplotlib==3.10.9
+scikit-learn==1.8.0

@@ -1,0 +1,78 @@
+{
+  "experiment": "E1 controlled structural stress test",
+  "seed": 20260828,
+  "d": 12,
+  "betas": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "reps_per_beta": 100,
+  "n_graphs_total": 500,
+  "fiber_beta": 4,
+  "checks": {
+    "dimension_law_all_pass": true,
+    "n_dimension_failures": 0,
+    "max_abs_Ah_over_cyclic_graphs": 1.9830366464711855e-15,
+    "max_D_over_normalized_circulations": 5.424917642623767e-15,
+    "max_abs_R_minus_1": 2.220446049250313e-16,
+    "max_abs_H_minus_1": 5.551115123125783e-15,
+    "numerical_tolerance": 1e-10,
+    "all_pass": true
+  },
+  "by_beta": [
+    {
+      "beta": 0,
+      "n_graphs": 100,
+      "nullity_unique": [
+        0
+      ],
+      "max_D_hidden": 0.0,
+      "max_abs_Ah": 0.0
+    },
+    {
+      "beta": 1,
+      "n_graphs": 100,
+      "nullity_unique": [
+        1
+      ],
+      "max_D_hidden": 5.424917642623767e-15,
+      "max_abs_Ah": 1.9830366464711855e-15
+    },
+    {
+      "beta": 2,
+      "n_graphs": 100,
+      "nullity_unique": [
+        2
+      ],
+      "max_D_hidden": 2.3825136917153933e-15,
+      "max_abs_Ah": 1.1240137825918254e-15
+    },
+    {
+      "beta": 4,
+      "n_graphs": 100,
+      "nullity_unique": [
+        4
+      ],
+      "max_D_hidden": 3.3977717236122695e-15,
+      "max_abs_Ah": 1.8041124150158794e-15
+    },
+    {
+      "beta": 8,
+      "n_graphs": 100,
+      "nullity_unique": [
+        8
+      ],
+      "max_D_hidden": 3.348613749474728e-16,
+      "max_abs_Ah": 1.3183898417423734e-16
+    }
+  ],
+  "outputs": {
+    "results_csv": "e1_structural_outputs\\e1_results.csv",
+    "fiber_csv": "e1_structural_outputs\\e1_fiber.csv",
+    "figure_pdf": "e1_structural_outputs\\e1_structural_stress_test.pdf",
+    "figure_png": "e1_structural_outputs\\e1_structural_stress_test.png"
+  }
+}

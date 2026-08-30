@@ -1,0 +1,8 @@
+quantity,F0_or_difference,F1
+complete endpoint game (max abs diff),0.0,
+Baseline Shapley vector (max abs diff),0.0,
+Integrated Gradients vector (max abs diff),5.329070518200751e-15,
+ledger redistribution R,0.0,2.3999999999999875
+hidden redistribution H,0.0,2.3999999999999715
+visible discrepancy D,0.0,1.582067810090848e-14
+max abs ledger-entry difference,0.4000000000000005,

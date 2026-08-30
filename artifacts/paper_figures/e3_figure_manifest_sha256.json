@@ -1,0 +1,67 @@
+{
+  "script": "e3_tabular_paper_figures.py",
+  "inputs": {
+    "control_audits": {
+      "path": "artifacts/e3_tabular_controls/control_audits.csv",
+      "sha256": "6de762dcc54d5e41cd1511f38eb5ae71bc2a43132b6fbf045432973d050af8d9"
+    },
+    "control_fits": {
+      "path": "artifacts/e3_tabular_controls/fit_metrics.csv",
+      "sha256": "2eb1755a698c1699c8b536faf0de37b0bf22a388425b2a8989e4a4c2d9447d7e"
+    },
+    "mlp_audits": {
+      "path": "artifacts/e3_tabular_mlp/mlp_audits.csv",
+      "sha256": "dc93b86cb21d0545a6fcaf069ec34616f20deb345e1845f6e7574957ecaacde7"
+    },
+    "mlp_fits": {
+      "path": "artifacts/e3_tabular_mlp/fit_metrics.csv",
+      "sha256": "592da423aeec7e389b15ce919637f8007901b76084cb1ae9d45e8c7c1252bb1d"
+    },
+    "crossnet_audits": {
+      "path": "artifacts/e3_tabular_crossnet/crossnet_audits.csv",
+      "sha256": "976074ba25006ee2784e05ac510e1779ee3231c0a795e6138db198d6769d195b"
+    },
+    "crossnet_fits": {
+      "path": "artifacts/e3_tabular_crossnet/fit_metrics.csv",
+      "sha256": "2e56925f9af095b009ed0a5cfb71487f4d597a6bdf1929d30a11c5e42b8b3c12"
+    }
+  },
+  "outputs": {
+    "e3_main_fitted_audit.pdf": {
+      "path": "artifacts/paper_figures/e3_main_fitted_audit.pdf",
+      "sha256": "778363c44f570af9d76837cab4ed73361ac558f3a558e9b4945f3e869593f76b"
+    },
+    "e3_main_fitted_audit.png": {
+      "path": "artifacts/paper_figures/e3_main_fitted_audit.png",
+      "sha256": "058b03d288f03446562e173fab0bb2247684a4694b93b6b61c096b0e19510e6d"
+    },
+    "e3_app_threshold_surfaces.pdf": {
+      "path": "artifacts/paper_figures/e3_app_threshold_surfaces.pdf",
+      "sha256": "1ab1c0ef4e0daee14716e9766a466a5963f6ef7ed85265005461f5a1c6c0abaa"
+    },
+    "e3_app_threshold_surfaces.png": {
+      "path": "artifacts/paper_figures/e3_app_threshold_surfaces.png",
+      "sha256": "252496e4ffda3e73fb30012d16d951740701277c2ee031d007aa46266d02411a"
+    },
+    "e3_app_predictive_numerical.pdf": {
+      "path": "artifacts/paper_figures/e3_app_predictive_numerical.pdf",
+      "sha256": "31cb8203c8fbda2f650066930c4f33b82f4e585d95cb3ff3ea03b51230baeb63"
+    },
+    "e3_app_predictive_numerical.png": {
+      "path": "artifacts/paper_figures/e3_app_predictive_numerical.png",
+      "sha256": "c8272720eb7195d42bfe17adfdab5cd4b784def693df36d04ac73ec19614679c"
+    },
+    "e3_app_cross_architecture.pdf": {
+      "path": "artifacts/paper_figures/e3_app_cross_architecture.pdf",
+      "sha256": "f956620f583b14365ea364a4b371674321e7f83f54e071771c7edcfaa7c6ba21"
+    },
+    "e3_app_cross_architecture.png": {
+      "path": "artifacts/paper_figures/e3_app_cross_architecture.png",
+      "sha256": "d9c532cebfb37791af41ae422e4141c4f5067e0ece906a871def07879a9687a1"
+    },
+    "e3_figure_values.json": {
+      "path": "artifacts/paper_figures/e3_figure_values.json",
+      "sha256": "b77e5058546a07300a5bab32564b5a5615932cb4f82043642a48eab4988db966"
+    }
+  }
+}

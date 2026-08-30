@@ -1,0 +1,297 @@
+{
+  "classwise": [
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.0723885472474813,
+      "median_H_over_s": 2.332003117418223,
+      "median_chi": 0.9704960874121398,
+      "q90_H_over_s": 4.922760862503942,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 0,
+      "true_class_id": 0,
+      "true_class_name": "T-shirt/top",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.1511902333401646,
+      "median_H_over_s": 6.045342841245269,
+      "median_chi": 0.973969209704778,
+      "q90_H_over_s": 9.1392280935964,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 0,
+      "true_class_id": 1,
+      "true_class_name": "Trouser",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.0698058942800291,
+      "median_H_over_s": 1.5429980809656976,
+      "median_chi": 0.958580138971168,
+      "q90_H_over_s": 4.641080385525415,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 3,
+      "true_class_id": 2,
+      "true_class_name": "Pullover",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.0949930468952046,
+      "median_H_over_s": 5.135644090216269,
+      "median_chi": 0.9785394834489348,
+      "q90_H_over_s": 11.52245507572638,
+      "strict_fc_endpoints_in_at_least_3_of_5": 1,
+      "strict_fc_rows": 3,
+      "true_class_id": 3,
+      "true_class_name": "Dress",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.0503513909913578,
+      "median_H_over_s": 1.5785576065582914,
+      "median_chi": 0.971580645992099,
+      "q90_H_over_s": 5.539302083946116,
+      "strict_fc_endpoints_in_at_least_3_of_5": 1,
+      "strict_fc_rows": 4,
+      "true_class_id": 4,
+      "true_class_name": "Coat",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.1311819439211575,
+      "median_H_over_s": 7.900371368674779,
+      "median_chi": 0.9834289981625042,
+      "q90_H_over_s": 11.936085591941366,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 0,
+      "true_class_id": 5,
+      "true_class_name": "Sandal",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.0694962357876188,
+      "median_H_over_s": 2.299630926016453,
+      "median_chi": 0.9686117814272582,
+      "q90_H_over_s": 7.899076583866584,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 2,
+      "true_class_id": 6,
+      "true_class_name": "Shirt",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.1271239733821702,
+      "median_H_over_s": 7.185312196147956,
+      "median_chi": 0.9825025996151674,
+      "q90_H_over_s": 9.535379131094835,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 0,
+      "true_class_id": 7,
+      "true_class_name": "Sneaker",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.1322341454831886,
+      "median_H_over_s": 4.842990340828671,
+      "median_chi": 0.9774223547488696,
+      "q90_H_over_s": 12.161515520987953,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 1,
+      "true_class_id": 8,
+      "true_class_name": "Bag",
+      "unique_endpoints": 10
+    },
+    {
+      "audit_rows": 50,
+      "median_D_over_s": 0.1255571421486002,
+      "median_H_over_s": 7.0992822192115534,
+      "median_chi": 0.982494322372514,
+      "q90_H_over_s": 9.370197628308446,
+      "strict_fc_endpoints_in_at_least_3_of_5": 0,
+      "strict_fc_rows": 0,
+      "true_class_id": 9,
+      "true_class_name": "Ankle boot",
+      "unique_endpoints": 10
+    }
+  ],
+  "endpoint_median_summary": {
+    "median_D_over_s": 0.10588960134806866,
+    "median_H_over_M": 0.6790577964050015,
+    "median_H_over_s": 5.652464696862573,
+    "median_chi": 0.9775550160240332,
+    "q90_H_over_s": 8.978519774024623
+  },
+  "experiment": "E3b appendix-only Fashion-MNIST replication",
+  "majority_threshold_surface_rows_tau_cols_kappa": [
+    [
+      0,
+      1,
+      3,
+      12,
+      45
+    ],
+    [
+      0,
+      1,
+      3,
+      12,
+      45
+    ],
+    [
+      0,
+      0,
+      2,
+      11,
+      44
+    ],
+    [
+      0,
+      0,
+      2,
+      11,
+      44
+    ],
+    [
+      0,
+      0,
+      2,
+      10,
+      43
+    ]
+  ],
+  "model_table_rows": [
+    {
+      "D_over_s_median": 2.1529332872049481e-16,
+      "H_over_s_max": 6.383503162561716e-14,
+      "H_over_s_median": 1.8744586290491306e-14,
+      "M_over_s_median": 3.599423257587267e-14,
+      "chi_median": null,
+      "family": "additive",
+      "label": "Additive region",
+      "material_majority_endpoints": 0,
+      "strict_majority_endpoints": 0,
+      "test_accuracy_max": 0.8834,
+      "test_accuracy_min": 0.8792
+    },
+    {
+      "D_over_s_median": 1.3564555018046067e-16,
+      "H_over_s_max": 5.008692626195514e-14,
+      "H_over_s_median": 2.4399682838664313e-14,
+      "M_over_s_median": 0.657323038606892,
+      "chi_median": null,
+      "family": "quadratic",
+      "label": "Quadratic region",
+      "material_majority_endpoints": 0,
+      "strict_majority_endpoints": 0,
+      "test_accuracy_max": 0.8737,
+      "test_accuracy_min": 0.867
+    },
+    {
+      "D_over_s_median": 0.1026548850280139,
+      "H_over_s_max": 19.71893609360812,
+      "H_over_s_median": 5.184643861156335,
+      "M_over_s_median": 7.183533798111448,
+      "chi_median": 0.977330310719885,
+      "family": "softplus_cnn",
+      "label": "Softplus CNN",
+      "material_majority_endpoints": 99,
+      "strict_majority_endpoints": 2,
+      "test_accuracy_max": 0.9018,
+      "test_accuracy_min": 0.8922
+    }
+  ],
+  "paired_endpoint_counts": {
+    "material_H_all_5_of_5": 99,
+    "material_H_at_least_3_of_5": 99,
+    "strict_all_5_of_5": 0,
+    "strict_at_least_1_of_5": 8,
+    "strict_at_least_3_of_5": 2
+  },
+  "pooled_seed_endpoint_summary": {
+    "audit_endpoint_accuracy": 0.876,
+    "false_consensus_count": 13,
+    "false_consensus_rate": 0.026,
+    "max_H_over_s": 19.71893609360812,
+    "median_D_over_s": 0.10265488502801397,
+    "median_H_over_M": 0.6624644736045346,
+    "median_H_over_s": 5.184643861156335,
+    "median_chi": 0.977330310719885,
+    "median_signed_cosine": 0.9837131332432489,
+    "median_spearman_abs": 0.9047619047619048,
+    "median_top3_jaccard": 1.0,
+    "q90_H_over_s": 9.34752849606786
+  },
+  "strict_witness_audit_ids": [
+    34,
+    48
+  ],
+  "verification": {
+    "cnn": {
+      "ignored_unused_checkpoints": [
+        "cnn_seed_20260920.pt",
+        "cnn_seed_20260921.pt",
+        "cnn_seed_20260922.pt",
+        "cnn_seed_20260923.pt",
+        "cnn_seed_20260924.pt"
+      ],
+      "manifest_sha256": "608ebf0df1164b38b1107e1bf017cc1963104d4f9708599e52a6cc119189cb6f",
+      "verified_non_checkpoint_files": {
+        "class_summary.csv": "f64314198ec77f46287b5671f9acc2780c50420e3dc22f57d7b8bca737672b14",
+        "cnn_audits.csv": "62cf79555300c36091807b379a0f41099348e9ecfb6508fae96d5bfcc3500ee6",
+        "cnn_audits_partial.csv": "62cf79555300c36091807b379a0f41099348e9ecfb6508fae96d5bfcc3500ee6",
+        "cnn_diagnostic_four_panel.pdf": "4bc50bc54e78aeaf54311ae5c17ee4f5935695a2e2fadbc2d5cd562fd4d923a8",
+        "cnn_diagnostic_four_panel.png": "eb82b964fb6e77a8aef211d742a6b5108cfd9bb26b86ddeb1cbd06c61eaaff83",
+        "cnn_summary.json": "37c6b086bc16aa2810b5ffda2617ec21556caf6c9cab247559134e7dc7c79650",
+        "endpoint_stability.csv": "299cc697dd1bd62d355515409c75ddbc0706732d80628153fb727382c803ee8e",
+        "fit_metrics.csv": "76aba31a8982f7caecd7b837e89cf7dac39837c1bed8394f82f84c060f6f8e81",
+        "fit_metrics_partial.csv": "76aba31a8982f7caecd7b837e89cf7dac39837c1bed8394f82f84c060f6f8e81"
+      }
+    },
+    "controls": {
+      "ignored_unused_checkpoints": [
+        "additive_seed_20260920.pt",
+        "additive_seed_20260921.pt",
+        "additive_seed_20260922.pt",
+        "additive_seed_20260923.pt",
+        "additive_seed_20260924.pt",
+        "quadratic_seed_20260920.pt",
+        "quadratic_seed_20260921.pt",
+        "quadratic_seed_20260922.pt",
+        "quadratic_seed_20260923.pt",
+        "quadratic_seed_20260924.pt"
+      ],
+      "manifest_sha256": "b8daada1afbac3fbc5b8f41fe9da582346a97d574e95de5955950ad38c66d536",
+      "verified_non_checkpoint_files": {
+        "control_audits.csv": "f906107a3972f5c6954510a6dc5232e95bb4297f30be4041f3ffac803bbff201",
+        "control_null_diagnostic.pdf": "f20a6b3f01b2947cbe91e5f77641da2335bfa41cf0df146aa53473042db3df98",
+        "control_null_diagnostic.png": "07643f1e3f2d029fc5eb9b245bbf0a0ee6cba237ef0fb9498c7e5346ef34d57c",
+        "control_summary.json": "cc0b8c74db852f3c871452bae2c60c6b9d61ca851ecb722058c48557b865255f",
+        "fit_metrics.csv": "aba5119e15cf33937f704bd3931c0d9b0c48252a9ebbec482e1f30b323905529"
+      }
+    },
+    "protocol": {
+      "ignored_unused_checkpoints": [],
+      "manifest_sha256": "29a53dba5d6c073dad95f20be9a6a964740315b9bda50501902eb364ada13bcf",
+      "verified_non_checkpoint_files": {
+        "audit_images_uint8.npz": "cf1644b4e17ec459170a5f4ce385b3366450256297339716149ce63b58773469",
+        "audit_indices.csv": "6c1d599b889bea92935b9e75423637cc240201b6eda79645a6d7dc40651a0db8",
+        "audit_panel.png": "382784eb0cf20d24fb4000b72673e56caeca93e0a88c684366aaedc20d850fda",
+        "baseline.csv": "fc81c3fedf72d0943e88e90b903f3dfe845ffa6685f5b528d7ee4e1dd07a08dd",
+        "baseline_image_uint8.npy": "cf9718ec0eb49235f8aea3963f86e499cb3afc45350d0e90a3a5d066fdb5c2de",
+        "baseline_region_grid.png": "cd432f61952f4a149de2b892c882f6b404924c9977d20e39a9e095861e33d3f8",
+        "preprocessing.json": "4c40d7ee438649d434e0f2156a762eb01bba08bf960608a06d42328a227bb7c8",
+        "protocol.json": "4cde113b15e3d7c076072d4cb58243a2464f1ed208e8a9cc850db82703def030",
+        "region_definitions.csv": "9b5a945e51846de365f1f54f99dc7d35a68adfdbcfb1149b92bfd6e4af561b51",
+        "region_map.npy": "713ff8c54cb44ee8b1ec3e06e3db1b769322b4a8b4b2a1a834b9e4cac1b1f246",
+        "split_indices.npz": "51ba56526f170fa2cdec1fd174bf61e4baf65955e5b059fdf9e862cb6308d6f4"
+      }
+    }
+  }
+}

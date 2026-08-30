@@ -1,0 +1,21 @@
+{
+  "controls_manifest_sha256": "b8daada1afbac3fbc5b8f41fe9da582346a97d574e95de5955950ad38c66d536",
+  "files": {
+    "class_summary.csv": "f64314198ec77f46287b5671f9acc2780c50420e3dc22f57d7b8bca737672b14",
+    "cnn_audits.csv": "62cf79555300c36091807b379a0f41099348e9ecfb6508fae96d5bfcc3500ee6",
+    "cnn_audits_partial.csv": "62cf79555300c36091807b379a0f41099348e9ecfb6508fae96d5bfcc3500ee6",
+    "cnn_diagnostic_four_panel.pdf": "4bc50bc54e78aeaf54311ae5c17ee4f5935695a2e2fadbc2d5cd562fd4d923a8",
+    "cnn_diagnostic_four_panel.png": "eb82b964fb6e77a8aef211d742a6b5108cfd9bb26b86ddeb1cbd06c61eaaff83",
+    "cnn_seed_20260920.pt": "c2ed45cf20893824f2c87f151797c1c667bcb5161ade1c9faf6ef0b631d8344c",
+    "cnn_seed_20260921.pt": "faac2298763867d308fe67036b6369d1f692d9c6467cfc570132d14f152d0d39",
+    "cnn_seed_20260922.pt": "7114a11d11625937b1b0e35e15e6b804a053ab2fb6299ca2831f1e6f798b2271",
+    "cnn_seed_20260923.pt": "ab50f4ef4bfe4656e4716e5e34308e16f87ff535d8e603d17b2130977765f8f8",
+    "cnn_seed_20260924.pt": "9e7dde073bdaef9983e5521bb086bb0c65d6ce43abf188bd72ba14f89d0b07c6",
+    "cnn_summary.json": "37c6b086bc16aa2810b5ffda2617ec21556caf6c9cab247559134e7dc7c79650",
+    "endpoint_stability.csv": "299cc697dd1bd62d355515409c75ddbc0706732d80628153fb727382c803ee8e",
+    "fit_metrics.csv": "76aba31a8982f7caecd7b837e89cf7dac39837c1bed8394f82f84c060f6f8e81",
+    "fit_metrics_partial.csv": "76aba31a8982f7caecd7b837e89cf7dac39837c1bed8394f82f84c060f6f8e81"
+  },
+  "hash_algorithm": "SHA-256",
+  "protocol_manifest_sha256": "29a53dba5d6c073dad95f20be9a6a964740315b9bda50501902eb364ada13bcf"
+}

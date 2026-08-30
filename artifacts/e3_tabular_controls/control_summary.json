@@ -1,0 +1,78 @@
+{
+  "experiment": "E3a fatal controls",
+  "protocol_dir": "artifacts/e3_tabular_protocol",
+  "protocol_manifest_sha256": "a5e6da9841043578e8664300dfd9fbf049359b01943a55ec2a2a340f5406527b",
+  "model_seeds": [
+    20260840,
+    20260841,
+    20260842,
+    20260843,
+    20260844
+  ],
+  "quadrature_orders": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "n_fits": 10,
+  "n_control_audits": 1000,
+  "control_null_tolerance_H_over_s": 1e-07,
+  "families": {
+    "additive": {
+      "n_audits": 500,
+      "resolved_rate": 1.0,
+      "certification_pass_rate": 1.0,
+      "max_R": 1.149011441547998e-13,
+      "max_D": 3.592005165531376e-15,
+      "max_H": 1.1436513112189892e-13,
+      "max_R_over_s": 3.511721457978807e-14,
+      "max_D_over_s": 1.0978238476000688e-15,
+      "max_H_over_s": 3.495339301967737e-14,
+      "max_abs_transfer_entry": 6.8833827526759706e-15,
+      "max_pot_conservation_error": 7.327471962526033e-15,
+      "max_bshap_reconstruction_error": 4.440892098500626e-15,
+      "max_ig_reconstruction_error": 0.0,
+      "max_bshap_completeness_error": 6.217248937900877e-15,
+      "max_ig_completeness_error": 6.716849298982197e-15,
+      "max_margin_gap_error": 4.488208746454889e-15,
+      "max_interior_mobius_reconstruction_error": 1.5543122344752192e-15,
+      "max_nested_quadrature_error": 3.033046280798146e-08,
+      "quadrature_order_counts": {
+        "32": 455,
+        "64": 45
+      }
+    },
+    "quadratic": {
+      "n_audits": 500,
+      "resolved_rate": 1.0,
+      "certification_pass_rate": 1.0,
+      "max_R": 2.5507677722257293e-13,
+      "max_D": 1.4291705220064502e-15,
+      "max_H": 2.5420406417243317e-13,
+      "max_R_over_s": 8.623275391611812e-14,
+      "max_D_over_s": 4.818793816655994e-16,
+      "max_H_over_s": 8.593771941508857e-14,
+      "max_abs_transfer_entry": 7.930164461608261e-15,
+      "max_pot_conservation_error": 1.250128472962686e-14,
+      "max_bshap_reconstruction_error": 2.220446049250313e-15,
+      "max_ig_reconstruction_error": 1.1102230246251565e-15,
+      "max_bshap_completeness_error": 2.4424906541753444e-15,
+      "max_ig_completeness_error": 2.6645352591003757e-15,
+      "max_margin_gap_error": 2.3206304602819633e-15,
+      "max_interior_mobius_reconstruction_error": 1.5543122344752192e-15,
+      "max_nested_quadrature_error": 9.769962616701378e-15,
+      "quadrature_order_counts": {
+        "32": 500
+      }
+    }
+  },
+  "pass_flags": {
+    "all_audits_resolved": true,
+    "all_audits_certified": true,
+    "additive_null": true,
+    "quadratic_null": true
+  },
+  "all_pass": true
+}

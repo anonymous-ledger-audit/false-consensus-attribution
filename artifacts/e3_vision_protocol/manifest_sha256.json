@@ -1,0 +1,18 @@
+{
+  "files": {
+    "audit_images_uint8.npz": "cf1644b4e17ec459170a5f4ce385b3366450256297339716149ce63b58773469",
+    "audit_indices.csv": "6c1d599b889bea92935b9e75423637cc240201b6eda79645a6d7dc40651a0db8",
+    "audit_panel.png": "382784eb0cf20d24fb4000b72673e56caeca93e0a88c684366aaedc20d850fda",
+    "baseline.csv": "fc81c3fedf72d0943e88e90b903f3dfe845ffa6685f5b528d7ee4e1dd07a08dd",
+    "baseline_image_uint8.npy": "cf9718ec0eb49235f8aea3963f86e499cb3afc45350d0e90a3a5d066fdb5c2de",
+    "baseline_region_grid.png": "cd432f61952f4a149de2b892c882f6b404924c9977d20e39a9e095861e33d3f8",
+    "preprocessing.json": "4c40d7ee438649d434e0f2156a762eb01bba08bf960608a06d42328a227bb7c8",
+    "protocol.json": "4cde113b15e3d7c076072d4cb58243a2464f1ed208e8a9cc850db82703def030",
+    "region_definitions.csv": "9b5a945e51846de365f1f54f99dc7d35a68adfdbcfb1149b92bfd6e4af561b51",
+    "region_map.npy": "713ff8c54cb44ee8b1ec3e06e3db1b769322b4a8b4b2a1a834b9e4cac1b1f246",
+    "split_indices.npz": "51ba56526f170fa2cdec1fd174bf61e4baf65955e5b059fdf9e862cb6308d6f4"
+  },
+  "hash_algorithm": "SHA-256",
+  "protocol_name": "E3b Fashion-MNIST exhaustive region-ledger audit",
+  "protocol_version": "1.0-freeze"
+}

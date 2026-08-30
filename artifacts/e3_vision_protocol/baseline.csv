@@ -1,0 +1,2 @@
+official_train_index,train_position,true_class_id,true_class_name,l2_distance_to_train_mean_image_in_0_1_space,rms_distance_to_train_mean_image_in_0_1_space
+37961,32293,6,Shirt,3.811538767058454,0.13612638453780193

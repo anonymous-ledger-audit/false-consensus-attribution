@@ -1,0 +1,21 @@
+{
+  "files": {
+    "additive_seed_20260920.pt": "c6bb426abb8e81fa1c789a4ceaefbf6b7ba64ac289d81832439b83ff489d47ea",
+    "additive_seed_20260921.pt": "a4358a7b2c0b22ea5bd7a031dc251a82661a6bb711a3bbf5f3ef6f02385905c2",
+    "additive_seed_20260922.pt": "0d2c9c214dbdb7975245e7e8f73ccfc17385f8c3589771691bcb0070885c8799",
+    "additive_seed_20260923.pt": "fb9177f55e77d96a6275b9b0508b0106fd185c687cf6d8cf480ed6b2e44c7317",
+    "additive_seed_20260924.pt": "5c193f02869dcdf66567c0432e0a32838fa9e16d7da84030ee2aabeda503dc24",
+    "control_audits.csv": "f906107a3972f5c6954510a6dc5232e95bb4297f30be4041f3ffac803bbff201",
+    "control_null_diagnostic.pdf": "f20a6b3f01b2947cbe91e5f77641da2335bfa41cf0df146aa53473042db3df98",
+    "control_null_diagnostic.png": "07643f1e3f2d029fc5eb9b245bbf0a0ee6cba237ef0fb9498c7e5346ef34d57c",
+    "control_summary.json": "cc0b8c74db852f3c871452bae2c60c6b9d61ca851ecb722058c48557b865255f",
+    "fit_metrics.csv": "aba5119e15cf33937f704bd3931c0d9b0c48252a9ebbec482e1f30b323905529",
+    "quadratic_seed_20260920.pt": "aac3e653fb065f063ca171f73d339cbdde449b962f186d1485942d42ce73e13d",
+    "quadratic_seed_20260921.pt": "4f20dfe9b1f3ba194a85cf8aa27b1b5020d9869e5aba98a3325507ec1ba7edab",
+    "quadratic_seed_20260922.pt": "dc87be682173ece6c80d964589ba4a975611706616820738ba76c3c9b2166f8d",
+    "quadratic_seed_20260923.pt": "8dded02e162583284ac7ce6a222280a5f2a701de05383221930a9efc632cb901",
+    "quadratic_seed_20260924.pt": "ad11b7ee47e75b68c9dec453914f9cd14907b4813ed59d9e49615725b9fb1901"
+  },
+  "hash_algorithm": "SHA-256",
+  "protocol_manifest_sha256": "29a53dba5d6c073dad95f20be9a6a964740315b9bda50501902eb364ada13bcf"
+}

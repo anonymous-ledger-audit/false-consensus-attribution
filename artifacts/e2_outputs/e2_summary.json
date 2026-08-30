@@ -1,0 +1,91 @@
+{
+  "experiment": "E2 smooth realizability and observational indistinguishability",
+  "seed": 20260829,
+  "quadrature_order": 64,
+  "E2a": {
+    "ks": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reps_per_k": 100,
+    "n_problems": 400,
+    "target_R_range": [
+      0.05,
+      1.0
+    ]
+  },
+  "E2b": {
+    "cycle_lengths": [
+      3,
+      4,
+      6,
+      8
+    ],
+    "exponents": [
+      1,
+      2,
+      3,
+      5,
+      9,
+      20
+    ],
+    "n_models": 24
+  },
+  "E2c": {
+    "cycle_length": 6,
+    "F0_exponent": 1,
+    "F1_exponent": 9,
+    "expected_R_F1": 2.4
+  },
+  "tolerances": {
+    "main": 1e-10,
+    "corner": 1e-12
+  },
+  "checks": {
+    "E2a_max_allocation_error": 6.439293542825908e-15,
+    "E2a_max_transfer_error": 6.328271240363392e-15,
+    "E2a_max_corner_error": 6.661338147750939e-16,
+    "E2a_max_pot_conservation_error": 2.4424906541753444e-15,
+    "E2a_negative_target_fraction": 0.6425,
+    "E2b_max_R_error": 4.1300296516055823e-14,
+    "E2b_max_D_error": 4.596323321948148e-14,
+    "E2b_max_H_error": 8.748557434046234e-14,
+    "E2b_max_visible_D": 4.596323321948148e-14,
+    "E2b_max_full_bshap_vs_pot_sum": 9.992007221626409e-16,
+    "E2b_max_full_ig_vs_pot_sum": 2.220446049250313e-16,
+    "E2c_corner_game_max_diff": 0.0,
+    "E2c_bshap_max_diff": 0.0,
+    "E2c_ig_max_diff": 5.329070518200751e-15,
+    "E2c_R_F0": 0.0,
+    "E2c_R_F1": 2.3999999999999875,
+    "E2c_H_F1": 2.3999999999999715,
+    "E2c_D_F1": 1.582067810090848e-14
+  },
+  "pass_flags": {
+    "E2a_allocation": true,
+    "E2a_transfer": true,
+    "E2a_conservation": true,
+    "E2a_corners": true,
+    "E2b_R": true,
+    "E2b_D_prediction": true,
+    "E2b_H": true,
+    "E2b_visible_D": true,
+    "E2c_corners": true,
+    "E2c_bshap": true,
+    "E2c_ig": true,
+    "E2c_R_F1": true
+  },
+  "all_pass": true,
+  "outputs": {
+    "e2a_csv": "e2_outputs\\e2a_results.csv",
+    "e2b_csv": "e2_outputs\\e2b_results.csv",
+    "e2c_csv": "e2_outputs\\e2c_summary.csv",
+    "e2a_figure_pdf": "e2_outputs\\e2a_planted_vs_recovered.pdf",
+    "e2b_figure_pdf": "e2_outputs\\e2b_positive_complementarity.pdf",
+    "e2c_figure_pdf": "e2_outputs\\e2c_observational_indistinguishability.pdf",
+    "e2_combined_figure_pdf": "e2_outputs\\e2_three_panel_paper.pdf",
+    "e2_combined_figure_png": "e2_outputs\\e2_three_panel_paper.png"
+  }
+}

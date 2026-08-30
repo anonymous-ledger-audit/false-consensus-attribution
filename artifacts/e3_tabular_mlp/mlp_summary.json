@@ -1,0 +1,182 @@
+{
+  "experiment": "E3a Softplus MLP fitted-model audit",
+  "model_seeds": [
+    20260840,
+    20260841,
+    20260842,
+    20260843,
+    20260844
+  ],
+  "architecture_grid": [
+    {
+      "width": 64,
+      "depth": 2,
+      "weight_decay": 1e-05
+    },
+    {
+      "width": 64,
+      "depth": 3,
+      "weight_decay": 1e-05
+    },
+    {
+      "width": 128,
+      "depth": 2,
+      "weight_decay": 1e-05
+    },
+    {
+      "width": 128,
+      "depth": 3,
+      "weight_decay": 1e-05
+    }
+  ],
+  "n_audits": 500,
+  "primary_false_consensus_definition": {
+    "D_over_s_max": 0.02,
+    "H_over_s_min": 0.05
+  },
+  "hard_pass_flags": {
+    "all_predictive_gates_pass": true,
+    "all_audits_resolved": true,
+    "all_audits_certified": true
+  },
+  "all_hard_checks_pass": true,
+  "overall": {
+    "median_D_over_s": 0.18816761052888864,
+    "median_H_over_s": 1.4130989786200776,
+    "q90_H_over_s": 6.137437862989083,
+    "max_H_over_s": 33.623253680936024,
+    "median_chi": 0.8850678560718555,
+    "false_consensus_count": 9,
+    "false_consensus_rate": 0.018,
+    "median_signed_cosine": 0.9398732332131791,
+    "median_spearman_abs": 0.8333333333333335,
+    "median_top3_jaccard": 0.5,
+    "median_H_over_M": 0.4402798325550934
+  },
+  "by_seed": [
+    {
+      "seed": 20260840,
+      "median_D_over_s": 0.17273262160277636,
+      "median_H_over_s": 2.1445980315460464,
+      "q90_H_over_s": 7.748041312481151,
+      "max_H_over_s": 25.590983691115923,
+      "median_chi": 0.9188694155931234,
+      "false_consensus_count": 2,
+      "false_consensus_rate": 0.02
+    },
+    {
+      "seed": 20260841,
+      "median_D_over_s": 0.30819227542007743,
+      "median_H_over_s": 0.8377789218508337,
+      "q90_H_over_s": 3.2539319416149812,
+      "max_H_over_s": 19.84861642720135,
+      "median_chi": 0.7956008049150065,
+      "false_consensus_count": 1,
+      "false_consensus_rate": 0.01
+    },
+    {
+      "seed": 20260842,
+      "median_D_over_s": 0.17508231735051738,
+      "median_H_over_s": 2.034060354951523,
+      "q90_H_over_s": 8.150502005435463,
+      "max_H_over_s": 33.623253680936024,
+      "median_chi": 0.9302499140296617,
+      "false_consensus_count": 2,
+      "false_consensus_rate": 0.02
+    },
+    {
+      "seed": 20260843,
+      "median_D_over_s": 0.1779169534872455,
+      "median_H_over_s": 1.2791660330785832,
+      "q90_H_over_s": 4.712457389687068,
+      "max_H_over_s": 24.422070591181683,
+      "median_chi": 0.8868473130184211,
+      "false_consensus_count": 2,
+      "false_consensus_rate": 0.02
+    },
+    {
+      "seed": 20260844,
+      "median_D_over_s": 0.17780312132874407,
+      "median_H_over_s": 1.5277303637153161,
+      "q90_H_over_s": 5.642513671774253,
+      "max_H_over_s": 19.18279054867121,
+      "median_chi": 0.8740228244985453,
+      "false_consensus_count": 2,
+      "false_consensus_rate": 0.02
+    }
+  ],
+  "redistribution_by_interaction_order": {
+    "2": {
+      "median": 0.37546619913426965,
+      "q90": 0.8124715531122104,
+      "max": 2.6089846054443955
+    },
+    "3": {
+      "median": 0.5006623570082676,
+      "q90": 1.558686403806726,
+      "max": 6.829261717330363
+    },
+    "4": {
+      "median": 0.42338926047294995,
+      "q90": 1.7385032300960916,
+      "max": 9.141526801523401
+    },
+    "5": {
+      "median": 0.2143708851398027,
+      "q90": 1.3953664874702336,
+      "max": 9.409667503613726
+    },
+    "6": {
+      "median": 0.07121837768255382,
+      "q90": 0.7065652609061774,
+      "max": 5.2330082615218965
+    },
+    "7": {
+      "median": 0.01308245602417333,
+      "q90": 0.19140222746608654,
+      "max": 1.3392383636356273
+    },
+    "8": {
+      "median": 0.0009392287424522651,
+      "q90": 0.02430062680472398,
+      "max": 0.24316542743654435
+    }
+  },
+  "threshold_sensitivity_rate": {
+    "0.01": {
+      "0.005": 0.008,
+      "0.01": 0.02,
+      "0.02": 0.03,
+      "0.05": 0.072,
+      "0.1": 0.204
+    },
+    "0.02": {
+      "0.005": 0.006,
+      "0.01": 0.018,
+      "0.02": 0.028,
+      "0.05": 0.07,
+      "0.1": 0.202
+    },
+    "0.05": {
+      "0.005": 0.0,
+      "0.01": 0.012,
+      "0.02": 0.018,
+      "0.05": 0.058,
+      "0.1": 0.19
+    },
+    "0.1": {
+      "0.005": 0.0,
+      "0.01": 0.002,
+      "0.02": 0.008,
+      "0.05": 0.038,
+      "0.1": 0.166
+    },
+    "0.2": {
+      "0.005": 0.0,
+      "0.01": 0.002,
+      "0.02": 0.004,
+      "0.05": 0.022,
+      "0.1": 0.146
+    }
+  }
+}

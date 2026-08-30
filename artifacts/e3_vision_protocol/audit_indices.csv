@@ -1,0 +1,101 @@
+audit_id,official_test_index,true_class_id,true_class_name
+0,280,0,T-shirt/top
+1,1403,0,T-shirt/top
+2,1512,0,T-shirt/top
+3,3341,0,T-shirt/top
+4,4116,0,T-shirt/top
+5,5544,0,T-shirt/top
+6,6708,0,T-shirt/top
+7,7346,0,T-shirt/top
+8,7393,0,T-shirt/top
+9,8134,0,T-shirt/top
+10,555,1,Trouser
+11,1680,1,Trouser
+12,2586,1,Trouser
+13,3766,1,Trouser
+14,4718,1,Trouser
+15,4831,1,Trouser
+16,6080,1,Trouser
+17,6208,1,Trouser
+18,7156,1,Trouser
+19,8365,1,Trouser
+20,368,2,Pullover
+21,750,2,Pullover
+22,1640,2,Pullover
+23,2633,2,Pullover
+24,2999,2,Pullover
+25,6288,2,Pullover
+26,6518,2,Pullover
+27,7013,2,Pullover
+28,7633,2,Pullover
+29,8675,2,Pullover
+30,1852,3,Dress
+31,3313,3,Dress
+32,5269,3,Dress
+33,5365,3,Dress
+34,6132,3,Dress
+35,6433,3,Dress
+36,8177,3,Dress
+37,8415,3,Dress
+38,8439,3,Dress
+39,8661,3,Dress
+40,239,4,Coat
+41,1142,4,Coat
+42,3916,4,Coat
+43,5343,4,Coat
+44,6289,4,Coat
+45,6993,4,Coat
+46,7594,4,Coat
+47,8085,4,Coat
+48,8903,4,Coat
+49,9143,4,Coat
+50,1325,5,Sandal
+51,1435,5,Sandal
+52,3703,5,Sandal
+53,4857,5,Sandal
+54,4983,5,Sandal
+55,6323,5,Sandal
+56,6699,5,Sandal
+57,6794,5,Sandal
+58,7277,5,Sandal
+59,7584,5,Sandal
+60,430,6,Shirt
+61,3174,6,Shirt
+62,4412,6,Shirt
+63,4542,6,Shirt
+64,5260,6,Shirt
+65,5777,6,Shirt
+66,6206,6,Shirt
+67,6466,6,Shirt
+68,7419,6,Shirt
+69,9004,6,Shirt
+70,60,7,Sneaker
+71,1722,7,Sneaker
+72,2164,7,Sneaker
+73,5110,7,Sneaker
+74,5313,7,Sneaker
+75,5523,7,Sneaker
+76,7928,7,Sneaker
+77,8612,7,Sneaker
+78,8934,7,Sneaker
+79,9879,7,Sneaker
+80,298,8,Bag
+81,523,8,Bag
+82,1566,8,Bag
+83,2304,8,Bag
+84,4575,8,Bag
+85,5972,8,Bag
+86,6624,8,Bag
+87,8070,8,Bag
+88,9290,8,Bag
+89,9833,8,Bag
+90,428,9,Ankle boot
+91,623,9,Ankle boot
+92,995,9,Ankle boot
+93,2043,9,Ankle boot
+94,2087,9,Ankle boot
+95,4442,9,Ankle boot
+96,4850,9,Ankle boot
+97,6965,9,Ankle boot
+98,9272,9,Ankle boot
+99,9528,9,Ankle boot

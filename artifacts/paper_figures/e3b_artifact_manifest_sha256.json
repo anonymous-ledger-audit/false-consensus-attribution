@@ -1,0 +1,39 @@
+{
+  "hash_algorithm": "SHA-256",
+  "input_manifests": {
+    "cnn": "608ebf0df1164b38b1107e1bf017cc1963104d4f9708599e52a6cc119189cb6f",
+    "controls": "b8daada1afbac3fbc5b8f41fe9da582346a97d574e95de5955950ad38c66d536",
+    "protocol": "29a53dba5d6c073dad95f20be9a6a964740315b9bda50501902eb364ada13bcf"
+  },
+  "outputs": {
+    "e3b_app_protocol.pdf": {
+      "bytes": 47278,
+      "sha256": "cfc1367632eaad87a4c05133ff2e56890907197115bda6b53cbdf38764a4727b"
+    },
+    "e3b_app_protocol.png": {
+      "bytes": 81423,
+      "sha256": "b600853831954f851b884601d5d6879615406e0081d9100dce30cbae826973c3"
+    },
+    "e3b_app_result_summary.pdf": {
+      "bytes": 26281,
+      "sha256": "de92307e2f88374beaaba2c02e91d72e3349da66f0832fc5bb1ec7022ac1f4bb"
+    },
+    "e3b_app_result_summary.png": {
+      "bytes": 203039,
+      "sha256": "8a9d4aa917c2e339607495bed427518f348fa47e1983810944e7b2e154aa6440"
+    },
+    "e3b_app_stable_witnesses.pdf": {
+      "bytes": 42626,
+      "sha256": "3f8f51ca206cd6ae2823f8c28eb0a137bc412fa0ff5be468b02a1ccf0ad66429"
+    },
+    "e3b_app_stable_witnesses.png": {
+      "bytes": 258893,
+      "sha256": "247d041375b70308ed9aa197fce0cf7bf2812b0700abff199a08e3b3d2b5a4f7"
+    },
+    "e3b_paper_values.json": {
+      "bytes": 10219,
+      "sha256": "db953111dc01c4fae0a8e2de2d65ae8bebd7ef67854054bee7a5bc2197d9e7a3"
+    }
+  },
+  "read_only_generation": true
+}

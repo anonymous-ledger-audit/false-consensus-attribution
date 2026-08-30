@@ -1,0 +1,265 @@
+{
+  "audit_panel": {
+    "class_counts": {
+      "0": 10,
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 10,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 10,
+      "9": 10
+    },
+    "images_per_true_class": 10,
+    "n_images": 100,
+    "same_endpoints_for_every_family_and_seed": true,
+    "seed": 20260911,
+    "selection_before_model_fitting": true,
+    "source": "canonical official test split"
+  },
+  "baseline": {
+    "l2_distance_to_train_mean_image": 3.811538767058454,
+    "official_train_index": 37961,
+    "rms_distance_to_train_mean_image": 0.13612638453780193,
+    "selection_rule": "observed training image minimizing Euclidean distance to the training mean image in raw [0,1] pixel space",
+    "train_position": 32293,
+    "true_class_id": 6,
+    "true_class_name": "Shirt"
+  },
+  "confirmatory_audit_count_if_all_three_families_run": 1500,
+  "dataset": {
+    "canonical_test_rows": 10000,
+    "canonical_training_rows": 60000,
+    "class_names": [
+      "T-shirt/top",
+      "Trouser",
+      "Pullover",
+      "Dress",
+      "Coat",
+      "Sandal",
+      "Shirt",
+      "Sneaker",
+      "Bag",
+      "Ankle boot"
+    ],
+    "content_sha256": {
+      "official_test_images_uint8": "aa06c0dad971ac54c00847a3c48e6fa836c44a335201fbd14aec353c8c514ae0",
+      "official_test_targets_int64": "a7f5988d162e6025ad518673890662dd02bd1d46b1800eb5029683095e8f0a41",
+      "official_train_images_uint8": "e880075693be1db1364da04864b82a9096e2b500091b64b3ead75c8c740a4cb4",
+      "official_train_targets_int64": "b85348e130a35627df340ed30bc8c6952affa4129ffdeec81ab4ccbca93647fb"
+    },
+    "image_shape": [
+      1,
+      28,
+      28
+    ],
+    "n_classes": 10,
+    "name": "Fashion-MNIST",
+    "provider": "torchvision.datasets.FashionMNIST"
+  },
+  "descriptive_false_consensus": {
+    "binary_event_is_not_the_empirical_thesis": true,
+    "complete_kappa_grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "complete_tau_grid": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "fixed_operating_point": {
+      "D_over_s_max": 0.02,
+      "H_over_s_min": 0.05
+    },
+    "robust_endpoint_definition": "criterion holds in at least 3 of 5 fitted-model seeds"
+  },
+  "explained_scalar": {
+    "endpoint_true_label_fixed_independently_of_model": true,
+    "formula": "g_y(x) = logit_y(x) - mean_{c != y} logit_c(x)",
+    "name": "true-class centered logit",
+    "original_logit_scale": true
+  },
+  "explanation_representation": {
+    "coalition_game_approximation": "none",
+    "endpoint_game_boolean_corners": 256,
+    "grid": [
+      2,
+      4
+    ],
+    "n_region_features": 8,
+    "pixels_per_region": 98,
+    "region_order": "row-major",
+    "region_shape_pixels": [
+      14,
+      7
+    ],
+    "screening": "none"
+  },
+  "future_model_contract": {
+    "additive_region_control": {
+      "activation": "Softplus(beta=1)",
+      "batch_size": 256,
+      "definition": "ten logits equal a bias plus the sum of eight independent 98->32->32->10 Softplus region subnetworks",
+      "hidden_depth": 2,
+      "hidden_width": 32,
+      "learning_rate": 0.001,
+      "max_epochs": 60,
+      "patience": 8,
+      "weight_decay": 1e-05
+    },
+    "quadratic_region_control": {
+      "batch_size": 256,
+      "definition": "linear 16-dimensional region embeddings; singleton linear terms plus all 28 pairwise Hadamard-product terms; linear ten-logit output",
+      "learning_rate": 0.002,
+      "max_epochs": 80,
+      "n_region_pairs": 28,
+      "patience": 10,
+      "region_embedding_dimension": 16,
+      "weight_decay": 0.0001
+    },
+    "softplus_cnn": {
+      "activation": "Softplus(beta=1)",
+      "batch_size": 256,
+      "conv_channels": [
+        32,
+        64
+      ],
+      "definition": "Conv(1,32,3,pad=1)->Softplus->AvgPool(2); Conv(32,64,3,pad=1)->Softplus->AvgPool(2); Linear(64*7*7,128)->Softplus->Linear(128,10)",
+      "fully_connected_width": 128,
+      "kernel_size": 3,
+      "learning_rate": 0.001,
+      "max_epochs": 40,
+      "padding": 1,
+      "patience": 7,
+      "pooling": "AveragePool2d(kernel_size=2,stride=2)",
+      "predictive_gate": {
+        "finite_logits": true,
+        "gate_is_not_used_for_retraining_or_hyperparameter_selection": true,
+        "maximum_test_centered_logit_distance_from_training_median_in_s": 10.0,
+        "minimum_test_accuracy": 0.85
+      },
+      "weight_decay": 0.0001
+    }
+  },
+  "model_seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "normalization_scale": {
+    "computed_per_fitted_model": true,
+    "definition": "s = Q0.95(g_y(x) over training observations using their true labels) - Q0.05 of the same values",
+    "uses_training_outputs_only": true
+  },
+  "numerical_contract": {
+    "adaptive_gauss_legendre_orders": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "all_audits_must_certify": true,
+    "all_audits_must_resolve": true,
+    "audit_dtype": "float64",
+    "certificate_tolerance_multiplier": 10.0,
+    "control_max_H_over_s": 1e-07,
+    "numerical_tolerance": "max(1e-10, 1e-8 * max(s, 1))"
+  },
+  "path": {
+    "definition": "straight line from the frozen observed baseline image to the frozen endpoint, expressed through eight region sliders",
+    "region_slider_formula": "x(t) = x0 + sum_r t_r * mask_r * (x1 - x0)"
+  },
+  "preprocessing": {
+    "fit_on_training_only": true,
+    "global_train_pixel_mean_0_1": 0.28614810041663724,
+    "global_train_pixel_std_0_1": 0.3529538234512355
+  },
+  "protocol_checks": {
+    "all_pass": true,
+    "audit_exactly_10_per_class": true,
+    "audit_n_exact": true,
+    "audit_test_only": true,
+    "audit_unique": true,
+    "baseline_in_train": true,
+    "baseline_is_observed_image": true,
+    "baseline_not_in_validation": true,
+    "canonical_test_shape": true,
+    "canonical_train_shape": true,
+    "region_ids_exactly_0_through_7": true,
+    "region_map_covers_exactly_784_pixels": true,
+    "regions_exactly_98_pixels_each": true,
+    "split_complete": true,
+    "split_disjoint": true,
+    "split_sizes_exact": true,
+    "stratified_train_exactly_5100_per_class": true,
+    "stratified_validation_exactly_900_per_class": true,
+    "train_only_normalization_check": true
+  },
+  "protocol_name": "E3b Fashion-MNIST exhaustive region-ledger audit",
+  "protocol_version": "1.0-freeze",
+  "software_versions_at_freeze": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "scikit_learn": "1.8.0",
+    "torch": "2.12.0+cpu",
+    "torchvision": "0.27.0+cpu"
+  },
+  "split": {
+    "method": "fixed stratified train/validation split",
+    "n_test": 10000,
+    "n_train": 51000,
+    "n_validation": 9000,
+    "seed": 20260910,
+    "source": "canonical 60,000-image training split",
+    "test_class_counts": {
+      "0": 1000,
+      "1": 1000,
+      "2": 1000,
+      "3": 1000,
+      "4": 1000,
+      "5": 1000,
+      "6": 1000,
+      "7": 1000,
+      "8": 1000,
+      "9": 1000
+    },
+    "train_class_counts": {
+      "0": 5100,
+      "1": 5100,
+      "2": 5100,
+      "3": 5100,
+      "4": 5100,
+      "5": 5100,
+      "6": 5100,
+      "7": 5100,
+      "8": 5100,
+      "9": 5100
+    },
+    "validation_class_counts": {
+      "0": 900,
+      "1": 900,
+      "2": 900,
+      "3": 900,
+      "4": 900,
+      "5": 900,
+      "6": 900,
+      "7": 900,
+      "8": 900,
+      "9": 900
+    }
+  }
+}

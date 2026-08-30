@@ -1,0 +1,22 @@
+{
+  "algorithm": "sha256",
+  "scope": "released experiment sources",
+  "files": {
+    "ICLR/e1_structural_stress_test.py": "5b92b84b75074fc1f4c315fc96b589c66a6aad1516436371a8ddd06ec2afa245",
+    "ICLR/e2_smooth_realizability.py": "51749bcfa466bdb00cc592bccdebf23c1eca436fd01b3a8511ce76d04d156c74",
+    "ICLR/e3_tabular_controls.py": "a949f104b6bfda8d6ab3bc9c692cd6c498dbf11a8934a3562518cf4d091278ca",
+    "ICLR/e3_tabular_cross_architecture.py": "e44477570dcc758b4c4f75a5681eb8440d09c0423b4468e19704c1841fcb2aea",
+    "ICLR/e3_tabular_crossnet.py": "b0f03ad8e98b805948574a8d82ea3dc865f8d89f006cbfdcbff20fe74aa29eb4",
+    "ICLR/e3_tabular_mlp.py": "1836814b2a84625d1157aed4383753ae63a98b0bb06c029861fe9e2a02fb28ee",
+    "ICLR/e3_tabular_mlp_endpoint_stability.py": "41140978df6640fb1193a0f10b4a28f66c2e98ce3f34a4de860dc291861221e6",
+    "ICLR/e3_tabular_mlp_threshold_surface.py": "c0ed8276ce6346c179eb8c0a1b6787c0005bcd7cf12fc659c357678d844f3995",
+    "ICLR/e3_tabular_paper_figures.py": "984e504b089fda3d388f3c3413279da7d1b514837972a23d96ff5d403b93209a",
+    "ICLR/e3_tabular_protocol.py": "4c8c5da4f779cb9328d26dc894752f218166ad2594666e31103b9e39d46ad6aa",
+    "ICLR/e3_vision_cnn.py": "9e549836ef45298667c3632ed090d6c5da6f7d847378fb552b72840850f34871",
+    "ICLR/e3_vision_controls.py": "707f3a6720a570dd36756be6229ac130a9ebe25085f141eed2ecb4d0df9c4f88",
+    "ICLR/e3_vision_paper_artifacts.py": "4a1adbbe8cf1bcd8a55e15f86217cb5e0474399357253953d3d91855e5733ff3",
+    "ICLR/e3_vision_protocol.py": "f6fbb7ac6dcb5dca838cfe2e79bc414bcc77e6d97dd69851a03a0f2ed34a3bf1",
+    "ICLR/fig_forest_vs_cycle.py": "d0e6fc341ee259a5a8913e410a8ab7a8dcc3b8f40498ec906d75171f922c1ba7",
+    "ICLR/fig_ledger_aggregation.py": "b8d1ca1819a8d262fdaa0744fe49afe3f97dcc049c66de90e29e947767e8e11d"
+  }
+}
